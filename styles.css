@@ -1,0 +1,85 @@
+@import 'tailwindcss';
+@config './tailwind.config.js';
+
+@theme {
+  --color-background: var(--color-zinc-900);
+  --color-onBackground: var(--color-zinc-200);
+  --color-surface: var(--color-zinc-800);
+  --color-primary: var(--color-green-600);
+  --color-onPrimary: var(--color-zinc-200);
+  --color-primary-variant: var(--color-red-800);
+  --color-flair: var(--color-yellow-500);
+}
+
+/* ============================================= */
+/* TAGS */
+/* ============================================= */
+
+@layer base {
+  /* Stop scroll when dialog is open */ 
+  body:has(dialog[open]) {
+    overflow: hidden;
+  }
+  dialog {
+    @apply m-auto bg-transparent;
+    
+    &::backdrop {
+      @apply bg-black/50;
+    }
+  }
+
+  h1 {
+    @apply text-5xl;
+
+    /* Scroll down lower than the navbar when navigating with anchor links. */
+    &:target {
+      @apply scroll-mt-28;
+    }
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-lg;
+  }
+
+  h4 {
+    @apply text-lg;
+  }
+
+  hr {
+    @apply my-4;
+  }
+
+  svg {
+    @apply shrink-0 size-6;
+  }
+
+  a {
+    @apply text-red-300;
+  }
+
+  article {
+    h1, h2, h3, h4 {
+      @apply my-4;
+    }
+    h1 {
+      @apply text-primary;
+    }
+    h2 {
+      @apply border-b-2 text-primary;
+    }
+    h3 {
+      @apply uppercase font-bold text-center text-yellow-500;
+    }
+    p {
+      @apply mb-2;
+    }
+    ul {
+      @apply list-disc ml-4;
+    }
+  }
+}
+

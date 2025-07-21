@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Come join us, a gospel-centred, community on mission for Jesus in Clayton, City of Monash. We meet every Sunday 10AM, 2PM and 5PM.">
+    <meta name="description" content="{{ config.description }}">
     <link rel="stylesheet" href="{{ get_url(path='styles.css', cachebust=true) | safe }}" />
     <link rel="icon" type="image/svg" href="{{ get_url(path='favicon.svg') | safe }}">
     <title>{{ config.title }}{% if page.title %} | {{ page.title }}{% endif %}</title>

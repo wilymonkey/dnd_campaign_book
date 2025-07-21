@@ -30,11 +30,6 @@
 
   h1 {
     @apply text-5xl;
-
-    /* Scroll down lower than the navbar when navigating with anchor links. */
-    &:target {
-      @apply scroll-mt-28;
-    }
   }
 
   h2 {
@@ -61,24 +56,39 @@
     @apply text-red-300;
   }
 
-  article {
-    h1, h2, h3, h4 {
-      @apply my-4;
+  h1, h2, h3, h4 {
+    @apply my-4;
+  }
+  h1 {
+    @apply text-primary;
+  }
+  h2 {
+    @apply border-b-2 text-primary;
+  }
+  h3 {
+    @apply uppercase font-bold text-center text-yellow-500;
+  }
+  p {
+    @apply mb-2;
+  }
+  ul {
+    @apply list-disc ml-4;
+  }
+  ol {
+    @apply list-decimal ml-4;
+  }
+  thead {
+    @apply bg-black;
+    & > tr > th {
+      @apply p-2;
     }
-    h1 {
-      @apply text-primary;
+  }
+  tbody {
+    & > tr > td {
+      @apply p-2;
     }
-    h2 {
-      @apply border-b-2 text-primary;
-    }
-    h3 {
-      @apply uppercase font-bold text-center text-yellow-500;
-    }
-    p {
-      @apply mb-2;
-    }
-    ul {
-      @apply list-disc ml-4;
+    & > tr:nth-child(even) {
+      @apply bg-zinc-800;
     }
   }
 }

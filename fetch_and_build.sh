@@ -18,3 +18,4 @@ else
     echo "No changes."
 fi
 
+popd

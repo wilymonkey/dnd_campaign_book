@@ -77,6 +77,9 @@
   ol {
     @apply list-decimal ml-4;
   }
+  table {
+    @apply mx-auto;
+  }
   thead {
     @apply bg-black;
     & > tr > th {

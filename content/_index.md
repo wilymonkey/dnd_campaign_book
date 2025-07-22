@@ -43,9 +43,9 @@
      Magic-User wants to cast "Magic Missile" three times in a day, they must
      dedicate three of their memorisation slots to "Magic Missile".
 
-## Lingering Injuries
+### Lingering Injuries
 
-Long rest to remove an injury.
+**Recovery:** Long rest to remove an injury.
 
 | d6 | Injury                                                         |
 | -- | -------------------------------------------------------------- |

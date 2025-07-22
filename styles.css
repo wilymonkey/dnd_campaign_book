@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&family=UnifrakturCook:wght@700&display=swap');
+
 @import 'tailwindcss';
 @config './tailwind.config.js';
 
@@ -9,6 +11,7 @@
   --color-onPrimary: var(--color-zinc-200);
   --color-primary-variant: var(--color-red-800);
   --color-flair: var(--color-yellow-500);
+  --font-pirata: "Pirata One", sans-serif;
 }
 
 /* ============================================= */
@@ -29,15 +32,14 @@
   }
 
   h1 {
-    @apply text-5xl;
+    @apply text-5xl font-pirata;
   }
 
   h2 {
-    @apply text-2xl;
+    @apply text-3xl font-pirata;
   }
 
   h3 {
-    @apply text-lg;
   }
 
   h4 {
